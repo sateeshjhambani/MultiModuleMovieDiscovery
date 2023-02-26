@@ -14,3 +14,12 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MultiModuleMovieDiscovery"
 include ':app'
+include ':feature:movie:data'
+include ':feature:movie:domain'
+include ':feature:movie:presentation'
+include ':feature:movie_details:data'
+include ':feature:movie_details:domain'
+include ':feature:movie_details:presentation'
+include ':core:network'
+include ':core:common'
+include ':core:feature_api'
