@@ -13,14 +13,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 @InstallIn(SingletonComponent::class)
 @Module
 object NetworkModule {
-
     @Provides
     fun provideApiService(): ApiService {
         return Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
-            .build().
-            create(ApiService::class.java)
+            .build().create(ApiService::class.java)
     }
 
     @Provides
